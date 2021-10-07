@@ -6,8 +6,6 @@ import '../theme.dart';
 class ProductCard extends StatelessWidget {
   ProductCard(ProductModel product);
 
-  get priceTextStyle => null;
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -62,7 +60,7 @@ class ProductCard extends StatelessWidget {
                 ),
                 Text(
                   '\$58,67',
-                  style: priceTextStyle.copyWith(
+                  style: secondaryTextStyle.copyWith(
                     fontSize: 14,
                     fontWeight: medium,
                   ),

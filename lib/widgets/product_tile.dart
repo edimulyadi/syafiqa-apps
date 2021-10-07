@@ -8,8 +8,6 @@ class ProductTile extends StatelessWidget {
   final ProductModel product;
   ProductTile(this.product);
 
-  get priceTextStyle => null;
-
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -67,9 +65,8 @@ class ProductTile extends StatelessWidget {
                   ),
                   Text(
                     '\$${product.price}',
-                    style: priceTextStyle.copyWith(
-                      fontWeight: medium,
-                    ),
+                    style: secondaryTextStyle.copyWith(
+                        fontWeight: medium, color: primaryColor),
                   ),
                 ],
               ),
